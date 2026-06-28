@@ -7,10 +7,10 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://mybench.localhost',
+        target: 'http://invoicetracking.duckdns.org:8080',
         changeOrigin: true,
         secure: false,
-        cookieDomainRewrite: 'localhost',
+        cookieDomainRewrite: '',
         headers: {
           'Expect': ''
         }
